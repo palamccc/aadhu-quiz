@@ -32,7 +32,7 @@ export function MathQuestion(props: { question: IMathQuestion; onSuccess: () => 
       setLightColor('bg-red-400');
       setActual('');
       setCorrectCount(0);
-      setLevel((l) => Math.max(l - 1, 0));
+      setLevel((l) => Math.max(l - 1, 1));
     }
     setTimeout(() => setLightColor('bg-gray-400'), 500);
   };
