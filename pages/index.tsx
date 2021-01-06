@@ -10,7 +10,7 @@ const allQuestions = [
   mathSumOneToSix,
   mathSumOneDigit,
   mathMultiOneToSix,
-  mathMultiOneDigit,
+  // mathMultiOneDigit,
 ];
 function genNextQuestion() {
   const randIndex = Math.floor(allQuestions.length * Math.random());
@@ -23,7 +23,7 @@ export default function Test() {
   const [curQuestion, setQuestion] = useState(genNextQuestion);
   const onSuccess = () => setQuestion(genNextQuestion());
   return (
-    <div className="bg-gray-200">
+    <div>
       <Head>
         <title>Aadhu Quiz</title>
         <link rel="icon" href="/favicon.ico" />
